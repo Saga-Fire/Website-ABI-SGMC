@@ -10,32 +10,41 @@
     <form>
         <fieldset>
             <legend>Customer's personal informations</legend>
-            <label for="clientNumber">Client's number :</label>
-            <input type="text" name="clientNumber" id="clientNumber" size="15" maxlength="15" placeholder="123456789" />
-            </br>
-            <label for="clientNumber">Company name :</label>
-            <input type="text" name="clientName" id="clientName" size="20" maxlength="20" placeholder="Royal Kebab" />
-            </br>
-            <label for="clientType">Type of customer :</label>
-            <select name="clientType">
-                <option value="Public" selected="selected">Public</option>
-                <option value ="Private">Private</option>
-            </select>                
-            </br>
-            <label for="clientActivity">Field of activity :</label>
-            <input type="text" name="clientActivity" id="clientActivity" size="30" maxlength="30" placeholder="Agri-food, industry, ..." />
-            </br>
-            <label for="clientTurnover">Turnover (k€) :</label>
-            <input type="text" name="clientTurnover" id="clientTurnover" size="9" maxlength="9" placeholder="1 500" />
-            </br>
-            <label for="clientStaff">Staff :</label>
-            <input type="text" name="clientStaff" id="clientStaff" size="5" maxlength="5" placeholder="135" />
-            </br>
-            <label for="clientAdress">Address :</label>
-            <input type="text" name="clientAdress" id="clientAdress" size="50" maxlength="50" placeholder="34 rue Dupont 76000 Rouen Cedex" />              
-            </br>
-            <label for="clientPhone">Phone number :</label>
-            <input type="tel" name="clientPhone" id="clientPhone" size="15" maxlength="15" placeholder="02 XX XX XX XX" />
+            <div class="champ">
+                <label for="clientNumber">Client's number :</label>
+                <input type="text" name="clientNumber" id="clientNumber" size="15" maxlength="15" placeholder="123456789" />
+            </div>
+            <div class="champ">
+                <label for="clientNumber">Company name :</label>
+                <input type="text" name="clientName" id="clientName" size="20" maxlength="20" placeholder="Royal Kebab" />
+            </div>
+            <div class="champ">
+                <label for="clientType">Type of customer :</label>
+                <select name="clientType">
+                    <option value="Public" selected="selected">Public</option>
+                    <option value ="Private">Private</option>
+                </select>                
+            </div>
+            <div class="champ">
+                <label for="clientActivity">Field of activity :</label>
+                <input type="text" name="clientActivity" id="clientActivity" size="30" maxlength="30" placeholder="Agri-food, industry, ..." />
+            </div>
+            <div class="champ">
+                <label for="clientTurnover">Turnover (k€) :</label>
+                <input type="text" name="clientTurnover" id="clientTurnover" size="9" maxlength="9" placeholder="1 500" />
+            </div>
+            <div class="champ">
+                <label for="clientStaff">Staff :</label>
+                <input type="text" name="clientStaff" id="clientStaff" size="5" maxlength="5" placeholder="135" />
+            </div>
+            <div class="champ">
+                <label for="clientAdress">Address :</label>
+                <input type="text" name="clientAdress" id="clientAdress" size="50" maxlength="50" placeholder="34 rue Dupont 76000 Rouen Cedex" />              
+            </div>
+            <div class="champ">
+                <label for="clientPhone">Phone number :</label>
+                <input type="tel" name="clientPhone" id="clientPhone" size="15" maxlength="15" placeholder="02 XX XX XX XX" />
+            </div>
         </fieldset>
         <fieldset>
             <legend>Nature of the customer</legend>
@@ -45,26 +54,33 @@
         </fieldset>
         <fieldset>
             <legend>Customer contact's</legend>
-            1st <u>c</u>ontact : <input name="contact1" type="text" size="15" maxlength="15" accesskey="c" placeholder="Name Surname" />
-            <u>P</u>hone number : <input name="contactPhone1" type="text" size="15" maxlength="15" accesskey="P" placeholder="06 XX XX XX XX" />
-            <u>M</u>ail : <input name="contactMail1" type="email" size="30" maxlength="30" accesskey="M" placeholder="name.mail@company.com" />
-            <u>D</u>epartment : <input name="contactDepartment1" type="text" size="15" maxlength="15" accesskey="D" placeholder="PDG" />
-            </br>                2nd <u>c</u>ontact : <input name="Contact2" type="text" size="15" maxlength="15" accesskey="c" placeholder="Name Surname" />
-            <u>P</u>hone number : <input name="contactPhone2" type="text" size="15" maxlength="15" accesskey="P" placeholder="06 XX XX XX XX" />
-            <u>M</u>ail : <input name="contactMail2" type="email" size="30" maxlength="30" accesskey="M" placeholder="name.mail@company.com" />
-            <u>D</u>epartment : <input name="contactDepartment2" type="text" size="15" maxlength="15" accesskey="D" placeholder="DRH" />
-            </br>
-            3rd <u>c</u>ontact : <input name="contact3" type="text" size="15" maxlength="15" accesskey="c" placeholder="Name Surname" />
-            <u>P</u>hone number : <input name="contactPhone3" type="text" size="15" maxlength="15" accesskey="P" placeholder="06 XX XX XX XX" />
-            <u>M</u>ail : <input name="contactMail3" type="email" size="30" maxlength="30" accesskey="M" placeholder="name.mail@company.com" />
-            <u>D</u>epartment : <input name="contactDepartment3" type="text" size="15" maxlength="15" accesskey="D" placeholder="IT" />
+            <div>
+                1st <u>c</u>ontact : <input name="contact1" type="text" size="15" maxlength="15" accesskey="c" placeholder="Name Surname" />
+                <u>P</u>hone number : <input name="contactPhone1" type="text" size="15" maxlength="15" accesskey="P" placeholder="06 XX XX XX XX" />
+                <u>M</u>ail : <input name="contactMail1" type="email" size="30" maxlength="30" accesskey="M" placeholder="name.mail@company.com" />
+                <u>D</u>epartment : <input name="contactDepartment1" type="text" size="15" maxlength="15" accesskey="D" placeholder="PDG" />
+            </div>
+            <div>
+                2nd <u>c</u>ontact : <input name="Contact2" type="text" size="15" maxlength="15" accesskey="c" placeholder="Name Surname" />
+                <u>P</u>hone number : <input name="contactPhone2" type="text" size="15" maxlength="15" accesskey="P" placeholder="06 XX XX XX XX" />
+                <u>M</u>ail : <input name="contactMail2" type="email" size="30" maxlength="30" accesskey="M" placeholder="name.mail@company.com" />
+                <u>D</u>epartment : <input name="contactDepartment2" type="text" size="15" maxlength="15" accesskey="D" placeholder="DRH" />
+            </div>
+            <div>
+                3rd <u>c</u>ontact : <input name="contact3" type="text" size="15" maxlength="15" accesskey="c" placeholder="Name Surname" />
+                <u>P</u>hone number : <input name="contactPhone3" type="text" size="15" maxlength="15" accesskey="P" placeholder="06 XX XX XX XX" />
+                <u>M</u>ail : <input name="contactMail3" type="email" size="30" maxlength="30" accesskey="M" placeholder="name.mail@company.com" />
+                <u>D</u>epartment : <input name="contactDepartment3" type="text" size="15" maxlength="15" accesskey="D" placeholder="IT" />
+            </div>
         </fieldset>
         <fieldset>
             <legend>Commercial comments</legend>
             <textarea name="comercialComments" id="comercialComments" cols="100" rows="3" ></textarea>
         </fieldset>
-        <input type="submit" value="Submit new customer" />
-        <input type="reset" value="Reset input" />
+        <div class="champ">
+            <input type="submit" value="Submit new customer" />
+            <input type="reset" value="Reset input" />
+        </div>
     </form>
 </body>
 </html>
