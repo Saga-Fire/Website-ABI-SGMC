@@ -14,6 +14,14 @@ body {
   font-family: "Websitefont", sans-serif;
 }
 
+header {
+  margin-bottom: 50px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
 header,
 footer {
   background-color: rgba(127, 255, 212, 0.5);
@@ -30,6 +38,7 @@ footer {
 
 #logo img {
   width: 300px;
+  padding-top: 25px;
 }
 
 #websiteTitle {
@@ -44,6 +53,7 @@ footer {
 
 #loginout {
   text-align: right;
+  padding-top: 25px;
 }
 
 #loginout input {
@@ -54,7 +64,13 @@ footer {
 #submission {
   text-align: center;
   padding-top: 10px;
-  padding-bottom: 14px;
+}
+
+nav {
+  background-color: rgb(220, 119, 12);
+  margin: auto;
+  width: 970px;
+  border-radius: 20px;
 }
 
 nav ul,
@@ -105,3 +121,41 @@ h3 {
 .pictureFloat {
   float: left;
 }
+
+/*                    Sanae code                    */
+.tablestuff {
+  overflow: auto;
+  border: 3px solid black;
+  border-collapse: collapse;
+  width: 90%;
+  margin: auto;
+}
+thead {
+  background-color: #d0e3fa;
+  border: 1px solid #6495ed;
+}
+tbody {
+  background-color: #ffffff;
+  border: 1px solid #6495ed;
+}
+th {
+  border: 1px dotted #6495ed;
+  background-color: #eff6ff;
+  padding: 5px;
+}
+td {
+  font-size: 80%;
+  border: 1px solid #6495ed;
+  padding: 5px;
+  text-align: left;
+  font-family: sans-serif;
+}
+caption {
+  margin: 60px;
+  font-size: 50px;
+  color: rgb(101, 139, 194);
+  font-style: italic;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+/*                    Fin Sanae code                    */
