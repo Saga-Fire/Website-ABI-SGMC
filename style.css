@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Titlefont";
+  src: url("./Fonts/3Dumb.ttf");
+}
+
+@font-face {
+  font-family: "Websitefont";
+  src: url("./Fonts/2Dumb.ttf");
+}
+
+body {
+  background-color: rgba(127, 255, 212, 0.3);
+  color: slategray;
+  font-family: "Websitefont", sans-serif;
+}
+
+header,
+footer {
+  background-color: rgba(127, 255, 212, 0.5);
+  clear: both;
+}
+
+#header,
+#footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+#logo img {
+  width: 190px;
+  height: 100px;
+}
+
+#websiteTitle {
+  font-family: "Titlefont", sans-serif;
+  text-align: center;
+}
+
+#description {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+#loginout {
+  text-align: right;
+}
+
+#loginout input {
+  background-color: rgb(217, 255, 242);
+}
+
+#menu,
+#submission {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+
+nav ul,
+footer ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li,
+footer li {
+  margin-right: 30px;
+}
+
+nav a,
+footer a {
+  color: slategray;
+  text-decoration: none;
+}
+
+nav a {
+  font-size: 1.3em;
+}
+
+nav a:hover,
+footer a:hover {
+  color: purple;
+  border-bottom: 3px solid purple;
+}
+
+input,
+select,
+textarea {
+  background-color: rgba(127, 255, 212, 0.5);
+}
+
+h2,
+h3 {
+  text-align: center;
+}
+
+.information {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.pictureFloat {
+  float: left;
+}
