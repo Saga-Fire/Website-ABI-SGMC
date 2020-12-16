@@ -11,7 +11,7 @@
 body {
   background-image: url("./Pictures/fond.jpg");
   background-attachment: fixed;
-  background-color: rgba(127, 255, 212, 0.3);
+  background-color: rgba(0, 140, 255, 0.3);
   color: rgb(50, 50, 50);
   font-family: "Websitefont", sans-serif;
 }
