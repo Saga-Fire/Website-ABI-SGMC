@@ -9,13 +9,11 @@
 }
 
 body {
+  background-image: url("./Pictures/fond.jpg");
+  background-attachment: fixed;
   background-color: rgba(127, 255, 212, 0.3);
-  color: slategray;
+  color: rgb(50, 50, 50);
   font-family: "Websitefont", sans-serif;
-}
-
-header {
-  margin-bottom: 50px;
 }
 
 footer {
@@ -24,10 +22,11 @@ footer {
 
 header,
 footer {
-  background-color: rgba(127, 255, 212, 0.5);
+  background-color: rgba(111, 187, 204, 0.9);
   border-radius: 30px;
-  box-shadow: 6px 10px 20px rgb(43, 143, 231);
+  box-shadow: 6px 10px 20px rgb(15, 39, 62);
   clear: both;
+  opacity: 0.8;
 }
 
 #header,
@@ -44,9 +43,13 @@ footer {
 #websiteTitle {
   font-family: "Titlefont", sans-serif;
   text-align: center;
+  color: rgba(189, 89, 8, 0.9);
+  text-shadow: 6px 6px 10px rgb(208, 244, 245);
+  width: 600px;
 }
 
 #description {
+  font-family: "Websitefont", sans-serif;
   font-size: 125%;
   font-weight: bold;
 }
@@ -67,10 +70,13 @@ footer {
 }
 
 nav {
-  background-color: rgb(220, 119, 12);
+  background-color: rgba(111, 187, 204, 0.9);
+  box-shadow: 6px 10px 20px rgb(43, 143, 231);
   margin: auto;
+  margin-top: 30px;
   width: 970px;
   border-radius: 20px;
+  opacity: 0.8;
 }
 
 nav ul,
@@ -87,7 +93,7 @@ footer li {
 
 nav a,
 footer a {
-  color: slategray;
+  color: rgb(50, 50, 50);
   text-decoration: none;
 }
 
@@ -97,8 +103,8 @@ nav a {
 
 nav a:hover,
 footer a:hover {
-  color: purple;
-  border-bottom: 3px solid purple;
+  color: rgba(189, 89, 8, 0.9);
+  border-bottom: 3px solid rgba(189, 89, 8, 0.9);
 }
 
 input,
@@ -122,10 +128,23 @@ h3 {
   float: left;
 }
 
-a {
-  color: rgb(7, 31, 79);
+article {
+  width: 600px;
+  border: 20px rgba(230, 124, 10, 0.843) dotted;
+  border-radius: 18px;
+  box-shadow: white;
+  text-shadow: rgb(211, 146, 49);
+  text-align: justify;
+  color: rgb(59, 87, 142);
+  font-style: italic;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 20px;
 }
 
+section {
+  display: flex;
+}
 /*                    Sanae code                    */
 .tablestuff {
   overflow: auto;
