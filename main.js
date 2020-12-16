@@ -52,32 +52,47 @@ document.getElementById("form").addEventListener("submit",(e)=>{
         };
     };
     
-    customerList.push(companyName);
-    customerList.push(clientNumber);
-    customerList.push(clientType);
-    customerList.push(clientActivity);
-    customerList.push(clientTurnover);
-    customerList.push(clientStaff);
-    customerList.push(clientAdress);
-    customerList.push(clientPhone);
-    customerList.push(contact);
-    customerList.push(comercialComments);
-
-    const saveCustomerList = [];
-    const loadCustomerList = [];
-    saveCustomerList.push(customerList);
-    sessionStorage.setItem('companyName', saveCustomerList);
-    loadCustomerList[0] = sessionStorage.getItem('companyName');
+    customerList.push({
+        companyName,
+        clientNumber,
+        clientType,
+        clientActivity,
+        clientTurnover,
+        clientStaff,
+        clientAdress,
+        clientPhone,
+        contact,
+        comercialComments
+    });
 
     tbody.appendChild(tr);
-    for (let i = 0; i < customerList.length; i++) {
+    for (let i = 0; i < 10; i++) {
         td[i] = document.createElement('td');
         tr.appendChild(td[i]);
-        td[i].innerHTML = loadCustomerList[0];//customerList[i];
     };
 
+    const customerListJson = JSON.stringify(customerList);
+    sessionStorage.setItem('clients', customerListJson);
+
+    const testJson = sessionStorage.getItem('client');
+    const test = JSON.parse(testJson);
+
+    sessionStorage.setItem('company', customerList[0].companyName);
+    const test2 = sessionStorage.getItem('company');
+
+    td[0].innerHTML = customerList[0].companyName;
+    td[1].innerHTML = customerList[0].clientNumber;
+    td[2].innerHTML = customerList[0].clientType;
+    td[3].innerHTML = customerList[0].clientActivity;
+    td[4].innerHTML = customerList[0].clientTurnover;
+    td[5].innerHTML = customerList[0].clientStaff;
+    td[6].innerHTML = customerList[0].clientAdress;
+    td[7].innerHTML = customerList[0].clientPhone;
+    td[8].innerHTML = customerList[0].contact;
+    td[9].innerHTML = customerList[0].comercialComments;
+
     console.log(customerList);
-    console.log(loadCustomerList);
-    console.log(saveCustomerList);
+    console.log(test);
+    console.log(test2);
 })
 
