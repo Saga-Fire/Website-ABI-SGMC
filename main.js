@@ -63,32 +63,21 @@ document.getElementById("form").addEventListener("submit",(e)=>{
     customerList.push(contact);
     customerList.push(comercialComments);
 
+    const saveCustomerList = [];
+    const loadCustomerList = [];
+    saveCustomerList.push(customerList);
+    sessionStorage.setItem('companyName', saveCustomerList);
+    loadCustomerList[0] = sessionStorage.getItem('companyName');
+
     tbody.appendChild(tr);
     for (let i = 0; i < customerList.length; i++) {
         td[i] = document.createElement('td');
         tr.appendChild(td[i]);
-        td[i].innerHTML = customerList[i];
+        td[i].innerHTML = loadCustomerList[0];//customerList[i];
     };
 
-    console.log(clientNumber);
-    console.log(companyName);
-    console.log(clientType);
-    console.log(clientActivity);
-    console.log(clientTurnover);
-    console.log(clientStaff);
-    console.log(clientAdress);
-    console.log(clientPhone);
-    console.log(primaryNature);
-    console.log(secondaryNature);
-    console.log(oldNature);
-    console.log(contact);
-    console.log(comercialComments);
-
     console.log(customerList);
-
-    let form = document.getElementById('form');
-    console.log(form);
-    
-
+    console.log(loadCustomerList);
+    console.log(saveCustomerList);
 })
 
