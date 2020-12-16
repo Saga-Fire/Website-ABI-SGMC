@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABI - Customer list</title>
+   <link type= "text/css" rel="stylesheet" href="./style.css"/>
+</head>
+
+<body>
+    
+    <header>
+            
+        <a href="./index.html"> <img src="Pictures/ABI.png" class="logo" alt="logo ABI"></a>
+
+        <div id="companyName">
+        <div id="comp_name">ABI Active Bretagne Informatique</div>
+        <div id="comp_baseline">The IT Services and Engineering Company</div>
+        </div>
+      
+        <div id="headerButton">
+        <button class="black_button">logout</button>
+        <button class="black_button">login</button>
+        </div>
+    </header>
+
+        <nav class="topnav">
+        <a class="active" href="#customer list">customer list</a>   |
+        <a href="#add new customer">add new customer</a>   |
+        <a href="#staff list">staff list</a>   |
+        <a href="#update staff data">update staff data</a>   |
+        <a href="#add new project">add new project</a>   |
+        <a href="#on-going project">on-going project</a>
+        </nav>
+
+    
+
+    <p></p>
+
+    <main>
+    <h1>Our customers</h1>
+
+    <form>
+        <div>
+            <input id="search" type="search" name="search" placeholder="Customer research (by name or customer number)" size="40px">
+          <button id="searchButton">Submit</button>
+       </div>
+        </form>
+      
+    
+      <p></p>
+
+            <table id="customers">
+                <thead>
+                    <tr>
+                        <th>Customer name</th>
+                        <th>Customer ID</th>
+                        <th>Type of Customer<br>(public/privé)</th>
+                        <th>Field of<br>activity</th>
+                        <th>Turnhover<br>(K€)</th>
+                        <th>Staff</th>
+                        <th>Address</th>
+                        <th>Phone</th>
+                        <th>Contact</th>
+                        <th>Comments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Decathlon</td>
+                        <td>00001</td>
+                        <td>Public</td>
+                        <td>Grande distribution</td>
+                        <td>1 500</td>
+                        <td>150</td>
+                        <td>12 chemin des Sportifs<br>69 001 Lyon</td>
+                        <td>04 00 00 00 00</td>
+                        <td>Teddy Riner<br>06 00 00 00 00<br>triner@gmail</td>
+                        <td>RAS</td>
+                    </tr>
+                    <tr>
+                        <td>Carrefour</td>
+                        <td>00002</td>
+                        <td>Public</td>
+                        <td>Grande distribution</td>
+                        <td>2 800</td>
+                        <td>100</td>
+                        <td>111 route des Affamés<br>69 100 Ecully</td>
+                        <td>04 00 00 00 00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Auchan</td>
+                        <td>00003</td>
+                        <td>Public</td>
+                        <td>Grande distribution</td>
+                        <td>3 000</td>
+                        <td>500</td>
+                        <td>58 impasse des Paysans<br>69 200 Dardilly</td>
+                        <td>04 00 00 00 00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                     <tr>
+                        <td>Atol</td>
+                        <td>00004</td>
+                        <td>Public</td>
+                        <td>Optique</td>
+                        <td>800</td>
+                        <td>8</td>
+                        <td>5 rue des Myopes<br>69 002 Lyon</td>
+                        <td>04 00 00 00 00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Decathlon</td>
+                        <td>00001</td>
+                        <td>Public</td>
+                        <td>Grande distribution</td>
+                        <td>1 500</td>
+                        <td>150</td>
+                        <td>12 chemin des Sportifs<br>69 001 Lyon</td>
+                        <td>04 00 00 00 00</td>
+                        <td>Teddy Riner<br>06 00 00 00 00<br>triner@gmail</td>
+                        <td>RAS</td>
+                    </tr>
+                    <tr>
+                        <td>Carrefour</td>
+                        <td>00002</td>
+                        <td>Public</td>
+                        <td>Grande distribution</td>
+                        <td>2 800</td>
+                        <td>100</td>
+                        <td>111 route des Affamés<br>69 100 Ecully</td>
+                        <td>04 00 00 00 00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Auchan</td>
+                        <td>00003</td>
+                        <td>Public</td>
+                        <td>Grande distribution</td>
+                        <td>3 000</td>
+                        <td>500</td>
+                        <td>58 impasse des Paysans<br>69 200 Dardilly</td>
+                        <td>04 00 00 00 00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                     <tr>
+                        <td>Atol</td>
+                        <td>00004</td>
+                        <td>Public</td>
+                        <td>Optique</td>
+                        <td>800</td>
+                        <td>8</td>
+                        <td>5 rue des Myopes<br>69 002 Lyon</td>
+                        <td>04 00 00 00 00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+    <footer>
+            <p class="footnav">
+            <a href="#add new customer">Legal notice</a>   |
+            <a href="#contact">contact us</a>
+            </p>
+    </footer>
+
+</body>
+
+</html>

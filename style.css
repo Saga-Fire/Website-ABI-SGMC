@@ -122,6 +122,10 @@ h3 {
   float: left;
 }
 
+a {
+  color: rgb(7, 31, 79);
+}
+
 /*                    Sanae code                    */
 .tablestuff {
   overflow: auto;
