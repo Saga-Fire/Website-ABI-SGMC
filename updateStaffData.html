@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css"/>
+   
+    <title>Update staff data</title>
+
+  </head>
+  <body>
+    <header id="header">
+        <div id="logo">
+            <a href="./index.html"><img src="./Pictures/ABI.png" /></a>   
+        </div>
+        <div id="websiteTitle">
+            <h1>ABI</br>Active Bretagne Informatique</h1>
+            <p id="description">The IT Services and Engineering Company</p>
+        </div>            
+        <form id="loginout">
+            <div>
+                <label for="login">Login :</label>
+                <input type="text" name="login" id="login" size="15" maxlength="30" placeholder="login" />
+            </div>
+            <div>
+                <label for="password">Password :</label>
+                <input type="password" name="password" id="password" size="15" maxlength="15" placeholder="password" />
+            </div>
+            <input type="submit" value="Submit" />
+        </form>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="./customerList.html#customerList">Customer list</a></li>
+            <li><a href="./addNewCustomer.html#addCustomer">Add new customer</a></li>
+            <li><a href="./staffData.html#staffData">Staff data</a></li>
+            <li><a href="./updateStaffData.html">Update staff data</a></li>
+        </ul>
+    </nav>
+
+<h2> Update collaborator data </h2><br />
+
+<form id="myForm">
+  <div class="collab">
+    <div class="class1">
+        <label for="registrationNumber">Registration number : </label>
+        <input type="text" name="registrationNumber" id="registrationNumber" size="15"  maxlength="15"/>
+
+        <label for="contrat">Contrat : </label>
+        <input type="text" name="contrat" id="contrat" size="15" maxlength="15"/>
+    </div> <br />
+
+    <div class="class2">
+        <label for="firstName">First name : </label>
+        <input type="text" name="firstName" id="firstName" size="15" maxlength="15"/>
+   
+        <label for="lastName">Last name : </label>
+        <input type="text" name="lastName" id="lastName" size="15" maxlength="15"/>
+    </div><br />
+
+    <div class="class3">
+        <label for="qualification">Qualification : </label>
+        <input type="text" name="qualification" id="qualification" size="15" maxlength="15"/>
+   
+        <label for="salary">Salary : </label>
+        <input type="text" name="salary" id="salary" size="15" maxlength="15"/>
+    </div><br />
+
+    <div class="class4">
+        <label for="hiringDate">Hiring date : </label>
+        <input type="text" name="hiringDate" id="hiringDate" size="15" maxlength="15"/>
+  
+        <label for="endContratDate">End contrat date : </label>
+        <input type="text" name="endContratDate" id="endContratDate" size="15" maxlength="15" />
+    </div><br />
+
+</div>
+    <div class="saveExit">
+        <button> Save </button>
+        <button> Exit </button><br>
+    </div><br />
+
+</form>
+
+<footer>
+    <section id="footer">
+        <div>
+            <h3>Adresse</h3>
+            <p>Siège social ABI</br>17 rue Saint-Martin</br>35 000 Rennes</br></p>
+        </div>
+        <div>
+            <h3>Horaire d'ouverture</h3>
+            <p>Du Lundi au Jeudi de 9H à 18H.</br>Le Vendredi de 9H à 16H.</p>
+        </div>
+        <div>
+            <h3>Plan du site</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.582534489324!2d-1.678601885142977!3d48.11828836048454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede38181173e3%3A0xc9c569b125485ba1!2s37%20Rue%20Saint-Martin%2C%2035700%20Rennes!5e0!3m2!1sfr!2sfr!4v1607923067042!5m2!1sfr!2sfr" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </section>
+    <ul>
+        <li><a href="./legalnotice.html#legalNotice">Legal notice</a></li>
+        <li><a href="./index.html">Contact</a></li>
+    </ul>
+
+</footer>
+
+<script src="./updateStaffData.js"></script>
+
+</body>
+</html>
