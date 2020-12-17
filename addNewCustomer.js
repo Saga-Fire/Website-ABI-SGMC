@@ -2,11 +2,10 @@
 
 document.getElementById("form").addEventListener("submit",(e)=>{
     e.preventDefault();
-    const customerList = [];
+    const customerList = JSON.parse(sessionStorage.getItem('clients')) ? JSON.parse(sessionStorage.getItem('clients')) : [];
     let contact = "";
     const tbody = document.getElementById("newCustomer");
     const tr = document.createElement('tr');
-    const td = [];
     const clientNumber = document.getElementById("clientNumber").value;
     const companyName = document.getElementById("companyName").value;
     const clientType = document.getElementById("clientType").value;
@@ -65,34 +64,32 @@ document.getElementById("form").addEventListener("submit",(e)=>{
         comercialComments
     });
 
-    tbody.appendChild(tr);
-    for (let i = 0; i < 10; i++) {
-        td[i] = document.createElement('td');
-        tr.appendChild(td[i]);
-    };
+    console.log(customerList);
 
     const customerListJson = JSON.stringify(customerList);
+    console.log(customerListJson);
     sessionStorage.setItem('clients', customerListJson);
 
-    const testJson = sessionStorage.getItem('client');
-    const test = JSON.parse(testJson);
+    const customerListSaveJson = sessionStorage.getItem('clients');
+    console.log(customerListSaveJson);
+    const customerListSave = JSON.parse(customerListSaveJson);
+    console.log(customerListSave);
 
-    sessionStorage.setItem('company', customerList[0].companyName);
-    const test2 = sessionStorage.getItem('company');
+    const customerTab = [companyName, clientNumber, clientType, clientActivity, clientTurnover, clientStaff, clientAdress, clientPhone, contact, comercialComments];
 
-    td[0].innerHTML = customerList[0].companyName;
-    td[1].innerHTML = customerList[0].clientNumber;
-    td[2].innerHTML = customerList[0].clientType;
-    td[3].innerHTML = customerList[0].clientActivity;
-    td[4].innerHTML = customerList[0].clientTurnover;
-    td[5].innerHTML = customerList[0].clientStaff;
-    td[6].innerHTML = customerList[0].clientAdress;
-    td[7].innerHTML = customerList[0].clientPhone;
-    td[8].innerHTML = customerList[0].contact;
-    td[9].innerHTML = customerList[0].comercialComments;
+    tbody.appendChild(tr);
+    for (let i = 0; i < customerTab.length; i++) {
+        const td = document.createElement('td');
+        td.innerHTML = customerTab[i];
+        tr.appendChild(td);
+    };
 
-    console.log(customerList);
-    console.log(test);
+    sessionStorage.setItem('company', JSON.stringify(customerList[0].companyName));
+    console.log(JSON.stringify(customerList[0].companyName));
+    const test2 = JSON.parse(sessionStorage.getItem('company'));
     console.log(test2);
+
+    
+    
 })
 

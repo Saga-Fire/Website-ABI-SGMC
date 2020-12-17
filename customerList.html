@@ -6,7 +6,6 @@
     <title>ABI - Customer list</title>
    <link type= "text/css" rel="stylesheet" href="./style.css"/>
 </head>
-
 <body>
     <header>
         <div id="header">
@@ -35,13 +34,13 @@
             <li><a href="./customerList.html#customerList">Customer list</a></li>
             <li><a href="./addnewcustomer.html#addCustomer">Add new customer</a></li>
             <li><a href="./staffData.html#staffData">Staff data</a></li>
-            <li><a href="./index.html">Update staff data</a></li>
+            <li><a href="./updateStaffData.html">Update staff data</a></li>
         </ul>
     </nav>
     <main>
     <h2 id="customerList">Our customers</h2>
 
-    <form>
+    <form id="form">
         <div>
             <input id="search" type="search" name="search" placeholder="Customer research (by name or customer number)" size="40px">
           <button id="searchButton">Submit</button>
@@ -66,55 +65,7 @@
                         <th>Comments</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Decathlon</td>
-                        <td>00001</td>
-                        <td>Public</td>
-                        <td>Grande distribution</td>
-                        <td>1 500</td>
-                        <td>150</td>
-                        <td>12 chemin des Sportifs<br>69 001 Lyon</td>
-                        <td>04 00 00 00 00</td>
-                        <td>Teddy Riner<br>06 00 00 00 00<br>triner@gmail</td>
-                        <td>RAS</td>
-                    </tr>
-                    <tr>
-                        <td>Carrefour</td>
-                        <td>00002</td>
-                        <td>Public</td>
-                        <td>Grande distribution</td>
-                        <td>2 800</td>
-                        <td>100</td>
-                        <td>111 route des Affamés<br>69 100 Ecully</td>
-                        <td>04 00 00 00 00</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>Auchan</td>
-                        <td>00003</td>
-                        <td>Public</td>
-                        <td>Grande distribution</td>
-                        <td>3 000</td>
-                        <td>500</td>
-                        <td>58 impasse des Paysans<br>69 200 Dardilly</td>
-                        <td>04 00 00 00 00</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                     <tr>
-                        <td>Atol</td>
-                        <td>00004</td>
-                        <td>Public</td>
-                        <td>Optique</td>
-                        <td>800</td>
-                        <td>8</td>
-                        <td>5 rue des Myopes<br>69 002 Lyon</td>
-                        <td>04 00 00 00 00</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                <tbody id="newCustomer">
                     <tr>
                         <td>Decathlon</td>
                         <td>00001</td>
@@ -187,7 +138,7 @@
                 <li><a href="./index.html">Contact</a></li>
             </ul>
         </footer>
-
+        <script src="./customerList.js"></script>
 </body>
 
 </html>
