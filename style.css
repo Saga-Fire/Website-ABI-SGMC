@@ -48,14 +48,18 @@ footer {
   font-weight: bold;
 }
 
-#connection,
-#disconnection {
+#connection {
   text-align: right;
   padding-top: 25px;
+  display: block;
 }
 
 #disconnection {
+  text-align: center;
+  padding-top: 25px;
+  display: none;
   color: crimson;
+  font-weight: bold;
 }
 
 #submission {

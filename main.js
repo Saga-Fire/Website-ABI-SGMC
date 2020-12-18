@@ -1,33 +1,28 @@
-document.getElementById("connection").addEventListener("submit",(e)=>{
+document.querySelector("#connection").addEventListener("submit",(e)=>{
     e.preventDefault();
-    const login = document.getElementById("login").value;
-    const form = document.createElement("form");
-    form.id = "disconnection";
-    const div = document.createElement("div");
-    const div_content = document.createTextNode(`Connected as ${login}`);
-    const logout = document.createElement("button");
-    form.appendChild(div);
-    div.appendChild(div_content);
-    form.appendChild(logout);
-    logout.appendChild(document.createTextNode(`Disconnection`));
-    const oldDiv = document.getElementById("connection");
-    const parentDiv = oldDiv.parentNode;
-    parentDiv.replaceChild(form, oldDiv);
+    oldUser = document.getElementById("disconnection").firstElementChild;
+    user = document.createElement("p");
+    login = document.getElementById("login").value;
+    user.textContent = `Connected as ${login}`;
+    document.getElementById("disconnection").replaceChild(user, oldUser);
+    if (document.getElementById("connection").style.display === "block") {
+        document.getElementById("connection").style.display = "none";
+        document.getElementById("disconnection").style.display = "block";
+    } else {
+        document.getElementById("connection").style.display = "block";
+        document.getElementById("disconnection").style.display = "none";
+    };
 })
 
-document.getElementById("disconnection").addEventListener("submit",(e)=>{
+document.querySelector("#disconnection").addEventListener("submit",(e)=>{
     e.preventDefault();
-    const form = document.createElement("form");
-    form.id = "connection";
-    const div = document.createElement("div");
-    const label = document.createElement("label");
-    const input = document.createElement("input");
-    const div_content = document.createTextNode(`Login :`);
-    form.appendChild(div);
-    div.appendChild(label);
-    div.appendChild(input);
-    label.appendChild(div_content);
-    const oldDiv = document.getElementById("disconnection");
-    const parentDiv = oldDiv.parentNode;
-    parentDiv.replaceChild(form, oldDiv);
+    if (document.getElementById("disconnection").style.display === "block") {
+        document.getElementById("connection").style.display = "block";
+        document.getElementById("disconnection").style.display = "none";
+    } else {
+        document.getElementById("connection").style.display = "none";
+        document.getElementById("disconnection").style.display = "block";
+    };
 })
+
+
