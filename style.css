@@ -121,7 +121,8 @@ textarea {
 }
 
 #personalInformation label,
-.class1 label {
+.class1 label,
+.Contact label {
   width: 210px;
   float: left;
 }
