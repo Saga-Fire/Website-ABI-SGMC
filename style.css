@@ -157,6 +157,34 @@ article {
   padding: 10px 0 50px 0;
 }
 
+/*                    Chloé code                    */
+.class1 {
+  display: flex;
+  justify-content: space-around;
+  font-family: georgia, serif;
+}
+.class2 {
+  display: flex;
+  justify-content: space-around;
+  font-family: georgia, serif;
+}
+.class3 {
+  display: flex;
+  justify-content: space-around;
+  font-family: georgia, serif;
+}
+.class4 {
+  display: flex;
+  justify-content: space-around;
+  font-family: georgia, serif;
+}
+
+.saveExit {
+  text-align: center;
+  font-family: georgia, serif;
+}
+/*                    Fin Chloé code                    */
+
 /*                    Sanae code                    */
 .tablestuff {
   overflow: auto;
