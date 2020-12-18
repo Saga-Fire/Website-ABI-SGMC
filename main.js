@@ -1,4 +1,4 @@
-let booly = JSON.parse(sessionStorage.getItem('booly')) ? JSON.parse(sessionStorage.getItem('booly')) : true;
+let booly = sessionStorage.getItem('booly') ? sessionStorage.getItem('booly') : true;
 console.log(booly);
 login = sessionStorage.getItem('login') ? sessionStorage.getItem('login') : "Saga_Fire";
 
