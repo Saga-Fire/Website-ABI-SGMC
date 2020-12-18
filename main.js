@@ -1,18 +1,17 @@
-let booly = sessionStorage.getItem('booly') ? sessionStorage.getItem('booly') : true;
-console.log(booly);
+let booly = sessionStorage.getItem('booly') ? sessionStorage.getItem('booly') : 1;
 login = sessionStorage.getItem('login') ? sessionStorage.getItem('login') : "Saga_Fire";
 
-if (booly === true) {
-    document.getElementById("disconnection").style.display = "none";
+if (booly == 1) {
     document.getElementById("connection").style.display = "block";
-    
-} else {
+    document.getElementById("disconnection").style.display = "none";    
+};
+if (booly == 0) {
     oldUser = document.getElementById("disconnection").firstElementChild;
     user = document.createElement("p");
     user.textContent = `Connected as ${login}`;
     document.getElementById("disconnection").replaceChild(user, oldUser);
     document.getElementById("connection").style.display = "none";
-    document.getElementById("disconnection").style.display = "block";
+    document.getElementById("disconnection").style.display = "block";  
 };
 
 
@@ -32,7 +31,7 @@ document.querySelector("#connection").addEventListener("submit",(e)=>{
         document.getElementById("connection").style.display = "block";
         document.getElementById("disconnection").style.display = "none";
     };
-    booly = false;
+    booly = 0;
     sessionStorage.setItem('booly', booly);
 })
 
@@ -45,7 +44,7 @@ document.querySelector("#disconnection").addEventListener("submit",(e)=>{
         document.getElementById("connection").style.display = "none";
         document.getElementById("disconnection").style.display = "block";
     };
-    booly = true;
+    booly = 1;
     sessionStorage.setItem('booly', booly);
 })
 

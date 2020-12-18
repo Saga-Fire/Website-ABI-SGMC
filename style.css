@@ -120,8 +120,9 @@ textarea {
   justify-content: space-evenly;
 }
 
-#personalInformation label {
-  width: 195px;
+#personalInformation label,
+.class1 label {
+  width: 210px;
   float: left;
 }
 
