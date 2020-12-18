@@ -158,33 +158,19 @@ article {
 }
 
 /*                    Chloé code                    */
-.class1 {
-  display: flex;
-  justify-content: space-around;
-  font-family: georgia, serif;
-}
-.class2 {
-  display: flex;
-  justify-content: space-around;
-  font-family: georgia, serif;
-}
-.class3 {
-  display: flex;
-  justify-content: space-around;
-  font-family: georgia, serif;
-}
+.class1,
+.class2,
+.class3,
 .class4 {
   display: flex;
   justify-content: space-around;
-  font-family: georgia, serif;
 }
 
 .saveExit {
   text-align: center;
-  font-family: georgia, serif;
 }
 /*                    Fin Chloé code                    */
-/*style css stuff data  code sanae*/
+/*                    Sanae code                        */
 #butt {
   color: rgb(55, 107, 154);
   font-weight: bold;
@@ -198,11 +184,9 @@ article {
   color: rgb(98, 84, 71);
   font-style: italic;
   font-weight: bold;
-  font-family: sans-serif;
   padding: 5px;
 }
 #bodyTable {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-collapse: collapse;
   width: 100%;
   margin-top: 30px;
@@ -211,7 +195,6 @@ article {
 td {
   border: 1px solid #ddd;
   padding: 8px;
-  font-family: sans-serif;
 }
 tr:nth-child(even) {
   background-color: rgba(26, 76, 99, 30%);
@@ -225,10 +208,9 @@ th {
   text-align: center;
   background-color: rgb(65, 113, 136);
   color: white;
-  font-family: sans-serif;
 }
 
-/*  fin code body sanae */
+/*                    Fin code Sanae                    */
 /*                    GREG CODE                         */
 #customers {
   border-collapse: collapse;

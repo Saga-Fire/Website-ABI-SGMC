@@ -3,7 +3,7 @@
 document.getElementById("form").addEventListener("submit",(e)=>{
     const clientNumberString = sessionStorage.getItem('clientNumber') ? sessionStorage.getItem('clientNumber') : 5;
     let clientNumber = parseInt(clientNumberString);
-    if (confirm(`Are you sure to add the customer as nummer ${clientNumber}?`)) {
+    if (confirm(`Are you sure you want add the customer as number ${clientNumber}?`)) {
         const customerList = JSON.parse(sessionStorage.getItem('clients')) ? JSON.parse(sessionStorage.getItem('clients')) : [];
         let contact = "";
 
@@ -171,7 +171,6 @@ document.getElementById("form").addEventListener("submit",(e)=>{
 })
 
 document.getElementById("form").addEventListener("reset",(e)=>{
-
     (confirm(`Are you sure to refresh the current form?`)) ? alert(`Input cancelled`) : e.preventDefault();
 })
 
