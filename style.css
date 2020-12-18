@@ -152,16 +152,8 @@ article {
   display: flex;
   padding-top: 50px;
 }
-
-.body {
-  padding: 10px 0 50px 0;
-}
-
 /*                    Chloé code                    */
-.class1,
-.class2,
-.class3,
-.class4 {
+.class1 {
   display: flex;
   justify-content: space-around;
 }
