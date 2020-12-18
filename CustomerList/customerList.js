@@ -1,5 +1,4 @@
 const customerList = JSON.parse(sessionStorage.getItem('clients')) ? JSON.parse(sessionStorage.getItem('clients')) : [];
-const tbody = document.getElementById("newCustomer");
 
 console.log(customerList);
 console.log(customerList[0].companyName)
@@ -17,6 +16,7 @@ for (let i = 0; i < customerList.length; i++) {
         customerList[i].contact,
         customerList[i].comercialComments
     ];
+    const tbody = document.getElementById("newCustomer");
     const tr = document.createElement('tr');
     tbody.appendChild(tr);
     for (let j = 0; j < customerTab.length; j++) {
@@ -26,7 +26,4 @@ for (let i = 0; i < customerList.length; i++) {
     }; 
 };
 
-document.getElementById("form").addEventListener("submit",(e)=>{
-    e.preventDefault();
-})
 

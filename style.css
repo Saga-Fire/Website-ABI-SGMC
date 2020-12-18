@@ -10,6 +10,7 @@
 
 body {
   background: url("./Pictures/fond.jpg") fixed rgba(0, 140, 255, 0.3);
+  background-size: cover;
   color: rgb(50, 50, 50);
   font-family: "Websitefont", sans-serif;
 }
