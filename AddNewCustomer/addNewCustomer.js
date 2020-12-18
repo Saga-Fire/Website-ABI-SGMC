@@ -1,7 +1,7 @@
 
 
 document.getElementById("form").addEventListener("submit",(e)=>{
-    const clientNumberString = sessionStorage.getItem('clientNumber') ? sessionStorage.getItem('clientNumber') : 1;
+    const clientNumberString = sessionStorage.getItem('clientNumber') ? sessionStorage.getItem('clientNumber') : 5;
     let clientNumber = parseInt(clientNumberString);
     if (confirm(`Are you sure to add the customer as nummer ${clientNumber}?`)) {
         const customerList = JSON.parse(sessionStorage.getItem('clients')) ? JSON.parse(sessionStorage.getItem('clients')) : [];

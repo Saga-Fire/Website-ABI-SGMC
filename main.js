@@ -1,21 +1,18 @@
-let booly = sessionStorage.getItem('booly') ? sessionStorage.getItem('booly') : true;
+let booly = JSON.parse(sessionStorage.getItem('booly')) ? JSON.parse(sessionStorage.getItem('booly')) : true;
 console.log(booly);
 login = sessionStorage.getItem('login') ? sessionStorage.getItem('login') : "Saga_Fire";
 
 if (booly === true) {
+    document.getElementById("disconnection").style.display = "none";
+    document.getElementById("connection").style.display = "block";
+    
+} else {
     oldUser = document.getElementById("disconnection").firstElementChild;
     user = document.createElement("p");
     user.textContent = `Connected as ${login}`;
     document.getElementById("disconnection").replaceChild(user, oldUser);
     document.getElementById("connection").style.display = "none";
     document.getElementById("disconnection").style.display = "block";
-} else {
-    oldUser = document.getElementById("disconnection").firstElementChild;
-    user = document.createElement("p");
-    user.textContent = `Connected as ${login}`;
-    document.getElementById("disconnection").replaceChild(user, oldUser);
-    document.getElementById("connection").style.display = "block";
-    document.getElementById("disconnection").style.display = "none";
 };
 
 
