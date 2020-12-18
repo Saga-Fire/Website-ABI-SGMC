@@ -1,10 +1,9 @@
-
-
 document.getElementById("form").addEventListener("submit",(e)=>{
     const clientNumberString = sessionStorage.getItem('clientNumber') ? sessionStorage.getItem('clientNumber') : 5;
     let clientNumber = parseInt(clientNumberString);
     if (confirm(`Are you sure you want add the customer as number ${clientNumber}?`)) {
         const customerList = JSON.parse(sessionStorage.getItem('clients')) ? JSON.parse(sessionStorage.getItem('clients')) : [];
+        const clientsData = JSON.parse(sessionStorage.getItem('clientsData')) ? JSON.parse(sessionStorage.getItem('clientsData')) : [];
         let contact = "";
 
         const companyName = document.getElementById("companyName").value;
@@ -121,6 +120,27 @@ document.getElementById("form").addEventListener("submit",(e)=>{
             };
         };
 
+        clientsData.push({
+            companyName,
+            clientNumber,
+            clientType,
+            clientActivity,
+            clientTurnover,
+            clientStaff,
+            clientAdress,
+            clientPhone,
+            primaryNature,
+            secondaryNature,
+            oldNature,
+            contact,
+            comercialComments
+        })
+
+        const clientsDataJson = JSON.stringify(clientsData);
+        sessionStorage.setItem('clientsData', clientsDataJson);
+        const clientsDataSaveJson = sessionStorage.getItem('clientsData');
+        const clientsDataSave = JSON.parse(clientsDataSaveJson);
+
         customerList.push({
             companyName,
             clientNumber,
@@ -133,34 +153,11 @@ document.getElementById("form").addEventListener("submit",(e)=>{
             contact,
             comercialComments
         });
-
+        
         const customerListJson = JSON.stringify(customerList);
         sessionStorage.setItem('clients', customerListJson);
-
         const customerListSaveJson = sessionStorage.getItem('clients');
         const customerListSave = JSON.parse(customerListSaveJson);
-
-        const customerTab = [
-            companyName,
-            clientNumber,
-            clientType,
-            clientActivity,
-            clientTurnover,
-            clientStaff,
-            clientAdress,
-            clientPhone,
-            contact,
-            comercialComments
-        ];
-
-        const tbody = document.getElementById("newCustomer");
-        const tr = document.createElement('tr');
-        tbody.appendChild(tr);
-        for (let i = 0; i < customerTab.length; i++) {
-            const td = document.createElement('td');
-            td.innerHTML = customerTab[i];
-            tr.appendChild(td);
-        };
 
         alert(`You have just created the customer number ${clientNumber}`)
         clientNumber += 1;
