@@ -184,51 +184,58 @@ article {
   font-family: georgia, serif;
 }
 /*                    Fin Chloé code                    */
-
-/*                    Sanae code                    */
-.tablestuff {
-  overflow: auto;
-  border: 3px solid black;
-  border-collapse: collapse;
-  width: 90%;
-  margin: auto;
+/*style css stuff data  code sanae*/
+#butt {
+  color: rgb(55, 107, 154);
+  font-weight: bold;
+  font-size: medium;
+  width: 200px;
+  margin: 20px;
+  border-radius: 20px;
 }
-thead {
-  background-color: #d0e3fa;
-  border: 1px solid #6495ed;
-}
-tbody {
-  background-color: #ffffff;
-  border: 1px solid #6495ed;
-}
-th {
-  border: 1px dotted #6495ed;
-  background-color: #eff6ff;
-  padding: 5px;
-}
-td {
-  font-size: 80%;
-  border: 1px solid #6495ed;
-  padding: 5px;
-  text-align: left;
-  font-family: sans-serif;
-}
-caption {
-  margin: 60px;
-  font-size: 50px;
-  color: rgb(101, 139, 194);
+#cap {
+  font-size: 40px;
+  color: rgb(98, 84, 71);
   font-style: italic;
   font-weight: bold;
   font-family: sans-serif;
+  padding: 5px;
 }
-/*                    Fin Sanae code                    */
+#bodyTable {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  font-family: sans-serif;
+}
+tr:nth-child(even) {
+  background-color: rgba(26, 76, 99, 30%);
+}
+tr:hover {
+  background-color: #ddd;
+}
+th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: rgb(65, 113, 136);
+  color: white;
+  font-family: sans-serif;
+}
 
+/*  fin code body sanae */
 /*                    GREG CODE                         */
 #customers {
   border-collapse: collapse;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
+  background-color: #ddd;
 }
 
 #customers td,
