@@ -222,3 +222,34 @@ caption {
   font-family: sans-serif;
 }
 /*                    Fin Sanae code                    */
+
+/*                    GREG CODE                         */
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: rgba(26, 76, 99, 30%);
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  background-color: rgb(65, 113, 136);
+  color: white;
+}
+/*                    Fin Greg code                     */
