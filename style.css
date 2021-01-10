@@ -1,18 +1,18 @@
 @font-face {
-  font-family: "Titlefont";
-  src: url("./Fonts/3Dumb.ttf");
+  font-family: 'Titlefont';
+  src: url('./Fonts/3Dumb.ttf');
 }
 
 @font-face {
-  font-family: "Websitefont";
-  src: url("./Fonts/2Dumb.ttf");
+  font-family: 'Websitefont';
+  src: url('./Fonts/2Dumb.ttf');
 }
 
 body {
-  background: url("./Pictures/fond.jpg") fixed rgba(0, 140, 255, 0.3);
+  background: url('./Pictures/fond.jpg') fixed rgba(0, 140, 255, 0.3);
   background-size: cover;
   color: rgb(50, 50, 50);
-  font-family: "Websitefont", sans-serif;
+  font-family: 'Websitefont', sans-serif;
 }
 
 header,
@@ -36,7 +36,7 @@ footer {
 }
 
 #websiteTitle {
-  font-family: "Titlefont", sans-serif;
+  font-family: 'Titlefont', sans-serif;
   text-align: center;
   color: rgba(189, 89, 8, 0.9);
   text-shadow: 6px 6px 10px rgb(208, 244, 245);
@@ -44,7 +44,7 @@ footer {
 }
 
 #description {
-  font-family: "Websitefont", sans-serif;
+  font-family: 'Websitefont', sans-serif;
   font-size: 125%;
   font-weight: bold;
 }

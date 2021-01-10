@@ -1,133 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ABI - Customer list</title>
-   <link type= "text/css" rel="stylesheet" href="../style.css"/>
-</head>
-<body>
+    <link type="text/css" rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
     <header id="header">
-        <div id="logo">
-            <a href="../index.html"><img src="..//Pictures/ABI.png" /></a>   
+      <div id="logo">
+        <a href="../index.html"><img src="..//Pictures/ABI.png" /></a>
+      </div>
+      <div id="websiteTitle">
+        <h1>ABI<br />Active Bretagne Informatique</h1>
+        <p id="description">The IT Services and Engineering Company</p>
+      </div>
+      <form id="connection">
+        <div>
+          <label for="login">Login :</label>
+          <input
+            type="text"
+            name="login"
+            id="login"
+            size="15"
+            maxlength="30"
+            placeholder="login"
+            required
+          />
         </div>
-        <div id="websiteTitle">
-            <h1>ABI</br>Active Bretagne Informatique</h1>
-            <p id="description">The IT Services and Engineering Company</p>
-        </div>            
-        <form id="connection">
-                <div>
-                    <label for="login">Login :</label>
-                    <input type="text" name="login" id="login" size="15" maxlength="30" placeholder="login" required />
-                </div>
-                <div>
-                    <label for="password">Password :</label>
-                    <input type="password" name="password" id="password" size="15" maxlength="15" placeholder="password" required />
-                </div>
-                <input type="submit" value="Connection" />
-        </form>
-        <form id="disconnection">
-            <p id="user"></p>
-            <input type="submit" value="Disconnection" />
-        </form>
+        <div>
+          <label for="password">Password :</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            size="15"
+            maxlength="15"
+            placeholder="password"
+            required
+          />
+        </div>
+        <input type="submit" value="Connection" />
+      </form>
+      <form id="disconnection">
+        <p id="user"></p>
+        <input type="submit" value="Disconnection" />
+      </form>
     </header>
     <nav>
-        <ul>
-            <li><a href="../CustomerList/customerList.html#customerList">Customer list</a></li>
-            <li><a href="../AddNewCustomer/addNewCustomer.html#addNewCustomer">Add new customer</a></li>
-            <li><a href="../StaffData/staffData.html#staffData">Staff data</a></li>
-            <li><a href="../AddNewStaff/addNewStaff.html#addNewStaff">Add new staff</a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="../CustomerList/customerList.html#customerList"
+            >Customer list</a
+          >
+        </li>
+        <li>
+          <a href="../AddNewCustomer/addNewCustomer.html#addNewCustomer"
+            >Add new customer</a
+          >
+        </li>
+        <li><a href="../StaffData/staffData.html#staffData">Staff data</a></li>
+        <li>
+          <a href="../AddNewStaff/addNewStaff.html#addNewStaff"
+            >Add new staff</a
+          >
+        </li>
+      </ul>
     </nav>
     <h2 id="customerList">Customer List</h2>
     <table id="customers">
-        <thead>
-            <tr>
-                <th>Customer name</th>
-                <th>Customer ID</th>
-                <th>Type of Customer</th>
-                <th>Field of activity</th>
-                <th>Turnhover<br>(KF)</th>
-                <th>Staff</th>
-                <th>Address</th>
-                <th>Phone</th>
-                <th>Contact</th>
-                <th>Comments</th>
-            </tr>
-        </head>
-        <tbody id="listCustomer">
-            <tr>
-                <td>Auchan</td>
-                <td>1</td>
-                <td>Public</td>
-                <td>Supermarket</td>
-                <td>80 000</td>
-                <td>500</td>
-                <td>60 rue Legrand - 69 000 Lyon</td>
-                <td>04.50.00.00.00</td>
-                <td>Pierre Mayer</td>
-                <td>Development projects for 2021</td>
-            </tr>
-            <tr>
-                <td>Decathlon</td>
-                <td>2</td>
-                <td>Public</td>
-                <td>Sport</td>
-                <td>20 000</td>
-                <td>300</td>
-                <td>17 rue Java - 69 200 Villeurbanne</td>
-                <td>04.50.00.00.00</td>
-                <td>Franck Petit</td>
-                <td>No projects</td>
-            </tr>
-            <tr>
-                <td>Optic 2000</td>
-                <td>3</td>
-                <td>Public</td>
-                <td>Optique</td>
-                <td>5 000</td>
-                <td>100</td>
-                <td>137 Avenue Jules Ferry - 69 200 Villeurbanne</td>
-                <td>04.50.00.00.00</td>
-                <td>Muriel Legrand</td>
-                <td>Will see clearer in 2022</td>
-            </tr>
-            <tr>
-                <td>Atol</td>
-                <td>4</td>
-                <td>Public</td>
-                <td>Optique</td>
-                <td>4 000</td>
-                <td>120</td>
-                <td>999 Avenue de la Marne - 69 000 Lyon</td>
-                <td>04.50.00.00.00</td>
-                <td>Hervé Kirchbaum</td>
-                <td></td>
-            </tr>
-        </tbody>
+      <thead>
+        <tr>
+          <th>Customer name</th>
+          <th>Customer ID</th>
+          <th>Type of Customer</th>
+          <th>Field of activity</th>
+          <th>Turnhover<br />(KF)</th>
+          <th>Staff</th>
+          <th>Address</th>
+          <th>Phone</th>
+          <th>Contact</th>
+          <th>Comments</th>
+        </tr>
+      </thead>
+      <tbody id="listCustomer">
+        <tr>
+          <td>Auchan</td>
+          <td>1</td>
+          <td>Public</td>
+          <td>Supermarket</td>
+          <td>80 000</td>
+          <td>500</td>
+          <td>60 rue Legrand - 69 000 Lyon</td>
+          <td>04.50.00.00.00</td>
+          <td>Pierre Mayer</td>
+          <td>Development projects for 2021</td>
+        </tr>
+        <tr>
+          <td>Decathlon</td>
+          <td>2</td>
+          <td>Public</td>
+          <td>Sport</td>
+          <td>20 000</td>
+          <td>300</td>
+          <td>17 rue Java - 69 200 Villeurbanne</td>
+          <td>04.50.00.00.00</td>
+          <td>Franck Petit</td>
+          <td>No projects</td>
+        </tr>
+        <tr>
+          <td>Optic 2000</td>
+          <td>3</td>
+          <td>Public</td>
+          <td>Optique</td>
+          <td>5 000</td>
+          <td>100</td>
+          <td>137 Avenue Jules Ferry - 69 200 Villeurbanne</td>
+          <td>04.50.00.00.00</td>
+          <td>Muriel Legrand</td>
+          <td>Will see clearer in 2022</td>
+        </tr>
+        <tr>
+          <td>Atol</td>
+          <td>4</td>
+          <td>Public</td>
+          <td>Optique</td>
+          <td>4 000</td>
+          <td>120</td>
+          <td>999 Avenue de la Marne - 69 000 Lyon</td>
+          <td>04.50.00.00.00</td>
+          <td>Hervé Kirchbaum</td>
+          <td></td>
+        </tr>
+      </tbody>
     </table>
-    <footer>    
-        <section id="footer">
-            <div>
-                <h3>Address</h3>
-                <p>ABI Head Office</br>17th Saint-Martin street </br>Zip code: 35 000 Rennes</br></p>
-            </div>
-            <div>
-                <h3>Opening time</h3>
-                <p>Monday to thursday from 9am to 6pm.</br>Friday from 9am to 4pm.</p>
-            </div>
-            <div>
-                <h3>Map</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.582534489324!2d-1.678601885142977!3d48.11828836048454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede38181173e3%3A0xc9c569b125485ba1!2s37%20Rue%20Saint-Martin%2C%2035700%20Rennes!5e0!3m2!1sfr!2sfr!4v1607923067042!5m2!1sfr!2sfr" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-        </section>
-        <ul>
-            <li><a href="../LegalNotice/legalNotice.html#legalNotice">Legal notice</a></li>
-            <li><a href="../Contact/contact.html#contact">Contact</a></li>
-        </ul>
+    <footer>
+      <section id="footer">
+        <div>
+          <h3>Address</h3>
+          <p>
+            ABI Head Office<br />17th Saint-Martin street <br />Zip code: 35 000
+            Rennes<br />
+          </p>
+        </div>
+        <div>
+          <h3>Opening time</h3>
+          <p>
+            Monday to thursday from 9am to 6pm.<br />Friday from 9am to 4pm.
+          </p>
+        </div>
+        <div>
+          <h3>Map</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.582534489324!2d-1.678601885142977!3d48.11828836048454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede38181173e3%3A0xc9c569b125485ba1!2s37%20Rue%20Saint-Martin%2C%2035700%20Rennes!5e0!3m2!1sfr!2sfr!4v1607923067042!5m2!1sfr!2sfr"
+            width="300"
+            height="200"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </section>
+      <ul>
+        <li>
+          <a href="../LegalNotice/legalNotice.html#legalNotice">Legal notice</a>
+        </li>
+        <li><a href="../Contact/contact.html#contact">Contact</a></li>
+      </ul>
     </footer>
-        <script src="../CustomerList/customerList.js"></script>
-        <script src="../main.js"></script>
-</body>
-
+    <script src="../CustomerList/customerList.js"></script>
+    <script src="../main.js"></script>
+  </body>
 </html>

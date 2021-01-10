@@ -1,92 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
     <title>ABI - Contact us</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header id="header">
-        <div id="logo">
-            <a href="../index.html"><img src="..//Pictures/ABI.png" /></a>   
+      <div id="logo">
+        <a href="../index.html"><img src="..//Pictures/ABI.png" /></a>
+      </div>
+      <div id="websiteTitle">
+        <h1>ABI<br />Active Bretagne Informatique</h1>
+        <p id="description">The IT Services and Engineering Company</p>
+      </div>
+      <form id="connection">
+        <div>
+          <label for="login">Login :</label>
+          <input
+            type="text"
+            name="login"
+            id="login"
+            size="15"
+            maxlength="30"
+            placeholder="login"
+            required
+          />
         </div>
-        <div id="websiteTitle">
-            <h1>ABI</br>Active Bretagne Informatique</h1>
-            <p id="description">The IT Services and Engineering Company</p>
-        </div>            
-        <form id="connection">
-                <div>
-                    <label for="login">Login :</label>
-                    <input type="text" name="login" id="login" size="15" maxlength="30" placeholder="login" required />
-                </div>
-                <div>
-                    <label for="password">Password :</label>
-                    <input type="password" name="password" id="password" size="15" maxlength="15" placeholder="password" required />
-                </div>
-                <input type="submit" value="Connection" />
-        </form>
-        <form id="disconnection">
-            <p id="user"></p>
-            <input type="submit" value="Disconnection" />
-        </form>
+        <div>
+          <label for="password">Password :</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            size="15"
+            maxlength="15"
+            placeholder="password"
+            required
+          />
+        </div>
+        <input type="submit" value="Connection" />
+      </form>
+      <form id="disconnection">
+        <p id="user"></p>
+        <input type="submit" value="Disconnection" />
+      </form>
     </header>
     <nav>
-        <ul>
-            <li><a href="../CustomerList/customerList.html#customerList">Customer list</a></li>
-            <li><a href="../AddNewCustomer/addNewCustomer.html#addNewCustomer">Add new customer</a></li>
-            <li><a href="../StaffData/staffData.html#staffData">Staff data</a></li>
-            <li><a href="../AddNewStaff/addNewStaff.html#addNewStaff">Add new staff</a></li>
-        </ul>
+      <ul>
+        <li>
+          <a href="../CustomerList/customerList.html#customerList"
+            >Customer list</a
+          >
+        </li>
+        <li>
+          <a href="../AddNewCustomer/addNewCustomer.html#addNewCustomer"
+            >Add new customer</a
+          >
+        </li>
+        <li><a href="../StaffData/staffData.html#staffData">Staff data</a></li>
+        <li>
+          <a href="../AddNewStaff/addNewStaff.html#addNewStaff"
+            >Add new staff</a
+          >
+        </li>
+      </ul>
     </nav>
 
+    <div class="Contact">
+      <h2 id="contact">Contact Us</h2>
 
+      <p>
+        If you have any question you can compleat this form and we reply to you
+        ASAP !
+      </p>
+      <form id="form">
+        <label for="name"> Name :</label>
+        <input type="text" name="name" id="name" size="50" maxlength="15" />
+        <br />
 
-<div class=" Contact">
-    <h2 id="contact"> Contact Us </h2>
+        <label for="email"> Email :</label>
+        <input type="text" name="email" id="email" size="50" maxlength="15" />
+        <br />
 
-    <p> If you have any question you can compleat this form and we reply to you ASAP !</p>
-    <form id="form">
-        <Label for="name"> Name :</Label>
-        <input type="text" name ="name" id="name" size="50"  maxlength="15" /> <br />
+        <label for="Object"> Object :</label>
+        <input type="text" name="Object" id="Object" size="50" maxlength="15" />
+        <br />
 
-        <Label for="email"> Email :</Label>
-        <input type="text" name ="email" id="email" size="50"  maxlength="15" /> <br />
-
-        <Label for="Object"> Object :</Label>
-        <input type="text" name ="Object" id="Object" size="50"  maxlength="15" /> <br />
-
-        <Label for="comment"> Comment :</Label>
-        <textarea name="comercialComments" id="comercialComments" cols="100" rows="3" ></textarea> <br />
+        <label for="comment"> Comment :</label>
+        <textarea
+          name="comercialComments"
+          id="comercialComments"
+          cols="100"
+          rows="3"
+        ></textarea>
+        <br />
 
         <button>Submit</button> <br />
+      </form>
+    </div>
 
-    </form>
-</div>
-
-
-
-    <footer>    
-        <section id="footer">
-            <div>
-                <h3>Address</h3>
-                <p>ABI Head Office</br>17th Saint-Martin street </br>Zip code: 35 000 Rennes</br></p>
-            </div>
-            <div>
-                <h3>Opening time</h3>
-                <p>Monday to thursday from 9am to 6pm.</br>Friday from 9am to 4pm.</p>
-            </div>
-            <div>
-                <h3>Map</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.582534489324!2d-1.678601885142977!3d48.11828836048454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede38181173e3%3A0xc9c569b125485ba1!2s37%20Rue%20Saint-Martin%2C%2035700%20Rennes!5e0!3m2!1sfr!2sfr!4v1607923067042!5m2!1sfr!2sfr" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-            </div>
-        </section>
-        <ul>
-            <li><a href="../LegalNotice/legalNotice.html#legalNotice">Legal notice</a></li>
-            <li><a href="./contact.html#contact">Contact</a></li>
-        </ul>
+    <footer>
+      <section id="footer">
+        <div>
+          <h3>Address</h3>
+          <p>
+            ABI Head Office<br />17th Saint-Martin street <br />Zip code: 35 000
+            Rennes<br />
+          </p>
+        </div>
+        <div>
+          <h3>Opening time</h3>
+          <p>
+            Monday to thursday from 9am to 6pm.<br />Friday from 9am to 4pm.
+          </p>
+        </div>
+        <div>
+          <h3>Map</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.582534489324!2d-1.678601885142977!3d48.11828836048454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480ede38181173e3%3A0xc9c569b125485ba1!2s37%20Rue%20Saint-Martin%2C%2035700%20Rennes!5e0!3m2!1sfr!2sfr!4v1607923067042!5m2!1sfr!2sfr"
+            width="300"
+            height="200"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </section>
+      <ul>
+        <li>
+          <a href="../LegalNotice/legalNotice.html#legalNotice">Legal notice</a>
+        </li>
+        <li><a href="./contact.html#contact">Contact</a></li>
+      </ul>
     </footer>
     <script src="../main.js"></script>
-</body>
+  </body>
 </html>
